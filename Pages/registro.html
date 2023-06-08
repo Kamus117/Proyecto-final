@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/registro.css">
+    <title>Ingresa</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo"
+            src="https://png.pngtree.com/png-clipart/20220913/ourmid/pngtree-line-art-halloween-ghost-candy-png-image_6148360.png"
+            alt="Logo">
+        <nav class="navbar">
+            <input type="checkbox" id="toggle-menu" />
+            <label for="toggle-menu" class="bars-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="navbar-list">
+                <li><a href="../index.html" class="navbar-link">Home</a></li>
+                <li><a href="./registro.html" class="navbar-link">Iniciar Sesion</a></li>
+                <li><a href="./nuevo.html" class="navbar-link">Regritrarme</a></li>
+                <li><a href="./contacto.html" class="navbar-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="spacetop"></div>
+    <div class="spacetop"></div>
+    <main class="main-registro">
+        <h1>Iniciar Sesión</h1>
+        <section class="form-container">
+            <form action="">
+                <label class="label-form" for="mail">
+                    <p id="form-mail">Inicia sesión con tu E-mail</p>
+                    <input id="form-mail" type="text">
+                </label>
+                <label id="form-password" for="password">
+                    <p>Contraseña</p>
+                    <input id="form-password" type="password">
+                </label>
+
+                <label class="label-checkbox" for="checkbox">
+
+                    <input type="checkbox" name="recordarme" id="record-btn">
+
+                    <p>Recordarme</p>
+
+                </label>
+
+                <label for="nuevo">
+                    <a href="./nuevo.html">Soy Nuevo...</a>
+                </label>
+
+                <label for="button-inicio">
+                    <button class="btn-iniciar" role="button"><span class="text">Iniciar Sesión</span></button>
+                </label>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

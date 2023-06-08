@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    --fuente-titulo: 'Play', sans-serif;
+    --fuente-primaria: 'Cuprum', sans-serif;
+
+    --color-primario: #333;
+    --color-secundario: white;
+}
+
+.main-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 85vh;
+}
+
+.contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    font-size: xx-large;
+}
+
+p{
+    width: 80%;
+    text-align: center;
+    font-family: var(--fuente-primaria);
+    font-size: large;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    gap: 8vh;
+}
+
+.via-contacto{
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+}
+
+.via-contacto:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: yellow;
+}
+
+/* Desktop */ @media (min-width: 1000px){
+    .titulo{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablet */ @media (min-width:700px) and (max-width:1000px){
+    .titulo{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
+
+/* Variables */
+:root{
+    --fuente-titulo: 'Play', sans-serif;
+    --fuente-primaria: 'Cuprum', sans-serif;
+
+    --color-primario: #333;
+    --color-secundario: white;
+}
+@keyframes titulo-caida{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+.box-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 30vh;
+
+    font-family: var(--fuente-primaria);
+    font-size: small;
+
+    background:  no-repeat center;
+    background-size: cover;
+    background-image:
+    linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)),
+    url(https://cdn.wallpapersafari.com/83/79/dVL8SI.png);
+}
+.titulo{
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    color: var(--color-secundario);
+
+    animation: titulo-caida 1s;
+    font-size: 3rem;
+}
+
+.box-titulo p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.main-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us{
+    font-family: var(--fuente-titulo);
+    font-size: large;
+    padding: 30px;
+    text-align: center;
+}
+
+.guia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.pasos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.pasos b{
+    font-family: var(--fuente-titulo);
+    font-size: larger;
+}
+
+.pasos i{
+    font-size: x-large;
+}
+
+
+.catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column; 
+    gap: 40px;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.catalogo h1{
+    font-family: var(--fuente-primaria);
+    margin: 15px 0 ;
+}
+.juego h2{    
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.juego{
+    height: 400px;
+    width: 250px;
+    border: 2px 0 solid;
+}
+
+
+
+.poster{    
+    height: 100%;
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poster:hover{
+    transition: 100ms;
+    border: solid white 1px;
+    box-shadow: 0 0 15px rgba(0, 76, 255, 0.737);
+}
+
+.f3{    
+    background-image:
+    url(https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/20ce78bd95ff14daaf324ef9093489f1.png);
+}
+
+.fnv{
+    background-image: url(https://howlongtobeat.com/games/Fallout_New_Vegas.jpg);
+}
+
+.rtcw{
+    background-image: url(https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/417cc09e93c5e73cdb8113473528ff5a.png);
+}
+
+.wolf2{
+    background-image: url(https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/47bc42b9f96e3530e28124b5ae619d4a.jpg);
+}
+
+.payday2{
+    background-image: url(https://pbs.twimg.com/media/DCNN_YIW0AIOc3d.jpg:large);
+}
+
+.isaac{
+    background-image: url(https://howlongtobeat.com/games/87531_The_Binding_of_Isaac_Repentance.jpg);
+}
+
+/* Desktop */
+
+@media (min-width:1000px){
+    .titulo{
+        font-size: 4rem;
+    }
+
+    .box-titulo p{
+
+        font-size: x-large;
+    }
+
+    .presentacion{
+        margin-bottom: 5%;
+    }
+
+    .about-us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .about-us p{
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .pasos , .pasos i{
+        font-size: 2rem;
+    }
+
+    .catalogo{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .juego{
+        margin-bottom: 10%;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .titulo{
+        font-size: 4rem;
+    }
+
+    .box-titulo p{
+        font-size: x-large;
+    }
+
+    .presentacion{
+        margin-bottom: 5%;
+    }
+
+    .about-us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .about-us p{
+        width: 75%;
+        font-size: 1.5rem;
+    }
+
+    .pasos , .pasos i{
+        font-size: 1.6rem;
+    }
+
+    .catalogo{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .juego{
+        margin-bottom: 15%;
+    }
+
+    .juego h2{
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+}
+

@@ -1,0 +1,148 @@
+
+/* Variables */
+:root{
+    --fuente-primaria: 'Cuprum', sans-serif;
+
+    --color-primario: #333;
+    --color-secundario: white;
+}
+
+.spacetop-nuevo{
+    height: 80px;
+}
+
+.main-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fuente-primaria);
+
+    height:80vh ;
+}
+
+.main-registro h1 {
+    text-align: center;
+}
+
+.form-container {
+    width: 90%;
+    padding: 15px;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form p {
+    font-size: larger;
+    font-family: var(--fuente-primaria);
+}
+
+
+form label input {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(100, 99, 99);
+}
+
+.label-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.label-checkbox input {
+    width: 8%;
+}
+
+form label a{
+    color: var(--color-secundario);
+    font-size:large;
+    padding: 5px 30px 5px 5px;
+    border: solid 1px var(--color-secundario);
+    width: max-content;
+}
+form label a:hover{
+    transition: all 1s;
+    border: solid 1px var(--color-primario);
+    box-shadow: #00eaff 0 0 15px; 
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+
+.btn-iniciar{
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    background-image: linear-gradient(144deg, #00eaff 1%, #0004ff);
+
+
+    color: #ffffff;
+    font-weight: 600;
+}
+.btn-iniciar:hover{
+    color: #fff;
+    box-shadow: #ffffff4a 0 0 15px;
+    transition:  0.5s;
+}
+
+
+/* Desktop */
+@media (min-width: 830px){
+    .main-registro{
+        height: 81vh;
+    }
+
+    h1{
+        margin-top: 5px;
+    }
+    
+    .footer-nuevo{
+        margin-top: 10px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 700px) and (max-width: 830px){
+    .main-registro{
+        height: 85vh;
+    }
+    h1{
+        font-size: 3rem;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    form{
+        gap: 30px;
+    }
+    form p{
+        font-size: 1.6rem;
+    }
+
+    form label a{
+        padding: 10px 20px 10px 15px;
+
+        font-size: 1.5rem;
+    }
+
+    .btn-iniciar{
+        height: 50px;
+        font-size: 1.7rem;
+    }
+}

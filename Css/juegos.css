@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Play:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    --fuente-titulo: 'Play', sans-serif;
+    --fuente-primaria: 'Cuprum', sans-serif;
+
+    --color-primario: #333;
+    --color-secundario: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.juego-data{
+    max-width: 800px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5vh;
+}
+
+.titulo {
+    font-family: var(--fuente-titulo);
+    margin-top: 5vh;
+}
+
+.poster {
+    height: 400px;
+    width: 250px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-descarga{
+    font-family: var(--fuente-titulo);
+    color: var(--color-secundario);
+    border: solid #fff 1px;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.btn-descarga:hover{
+    cursor: pointer;
+    background-color: crimson;
+    border: black 1px solid;
+    transition: 1s;
+}
+
+.descripcion{
+    font-family: var(--fuente-primaria);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Posters */
+
+.f3{    
+    background-image:
+    url(https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/20ce78bd95ff14daaf324ef9093489f1.png);
+}
+
+.fnv{
+    background-image: url(https://howlongtobeat.com/games/Fallout_New_Vegas.jpg);
+}
+
+.rtcw{
+    background-image: url(https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/417cc09e93c5e73cdb8113473528ff5a.png);
+}
+
+.wolf2{
+    background-image: url(https://cdn2.steamgriddb.com/file/sgdb-cdn/grid/47bc42b9f96e3530e28124b5ae619d4a.jpg);
+}
+
+.payday2{
+    background-image: url(https://pbs.twimg.com/media/DCNN_YIW0AIOc3d.jpg:large);
+}
+
+.isaac{
+    background-image: url(https://howlongtobeat.com/games/87531_The_Binding_of_Isaac_Repentance.jpg);
+}
+
+/* Desktop */ @media (min-width:1000px ){
+    .titulo{
+        font-size: 2rem;
+    }
+
+
+    .btn-descarga{
+        font-size: 2rem;
+    }
+
+    .descripcion{
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablet */@media (min-width: 700px) and (max-width: 1000px){
+    .titulo{
+        font-size: 3rem;
+    }
+
+    .btn-descarga{
+        font-size:1.5rem;
+    }
+
+    .descripcion{
+        padding: 70px;
+        font-size: 1.4rem;
+    }
+}
